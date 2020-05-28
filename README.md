@@ -24,7 +24,13 @@ You just need to disable all permissions for the file /dev/video0
  - clear
  - figlet -f slant "TEXT" | lolcat 
    ````
-  
+  To make custom prompt you need to edit PS1 inside of .bashrc file (bash.bashrc and .bashrc are different files!)
+```sh
+ - PS1="$(tput setaf 10)\u"
+ - PS1+="$(tput setaf 118)@\h "
+ - PS1+="\W -> "
+ - PS1+="$(tput sgr0)";
+   ````
   
  
 #### _This is a personal list of commands (so as not to forget something important xd), it will be replenished as needed_
